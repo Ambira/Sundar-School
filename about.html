@@ -1,0 +1,192 @@
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <style>
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .bg-white {
+            background-color: white !important;
+        }
+    </style>
+</head>
+<body class="bg-white-100">
+
+<nav class="navbar bg-white border-b border-gray-200 shadow">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="index.html" class="flex items-center space-x-3">
+            <img src="images/logo.png" class="h-10" alt="Sundar School Logo" />
+            <span class="self-center text-2xl font-semibold">Sundar School</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 bg-white md:flex-row md:space-x-8">
+                <li>
+                    <a href="index.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
+                </li>
+                <li>
+                  <a href="about.html" class="block py-2 px-3 text-red-700 rounded md:bg-transparent md:p-0" aria-current="page">About Us</a>
+                </li>
+                <li>
+                    <a href="apply.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">Apply Now</a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">Gallery</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="block py-2 px-3 text-gray-900 rounded md:hover:bg-transparent md:p-0">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-center text-red-600 mb-12">About Us</h2>
+            <p class="text-gray-700 text-center mb-10 max-w-3xl mx-auto">
+                Sundar School is dedicated to fostering excellence in education and was established with the vision of providing quality education. We aim to develop well-rounded individuals who are not only academically proficient but also socially responsible. We take pride in our inclusive approach, innovative teaching methods, and dedicated faculty, ensuring that every student receives personalized attention and support. We prepare our students for the challenges of the 21st century while staying rooted in cultural values.
+            </p>
+
+            <!-- Academics Section -->
+            <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-6">Academics</h3>
+                <p class="text-gray-600 mb-6">
+                    Our academic programs are designed to cultivate critical thinking, creativity, and problem-solving skills. We follow a well-structured curriculum tailored to meet the needs of diverse learners while adhering to national and international standards. Our dedicated faculty ensures that students are not just taught but inspired to learn.
+                </p>
+                <ul class="list-disc list-inside text-gray-600">
+                    <li>Interactive and engaging classroom experiences</li>
+                    <li>Integration of technology into learning</li>
+                    <li>A focus on STEAM (Science, Technology, Engineering, Arts, and Mathematics)</li>
+                    <li>Arts and humanities for a well-rounded education</li>
+                </ul>
+            </div>
+
+            <!-- Student Life Section -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-6">Student Life</h3>
+                <p class="text-gray-600 mb-6">
+                    Sundar School offers a vibrant and enriching environment where students can thrive academically and personally. Our extracurricular programs are designed to nurture talents, build confidence, and encourage collaboration.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-semibold text-center text-blue-500">Sports and Athletics</h4>
+                        <p class="text-gray-600 text-center">Promoting physical health and teamwork through various sports programs.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-semibold text-center text-blue-500">Music, Dance, and Arts</h4>
+                        <p class="text-gray-600 text-center">Encouraging creativity and self-expression through artistic pursuits.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-semibold text-center text-blue-500">Community Service Projects</h4>
+                        <p class="text-gray-600 text-center">Fostering empathy and social responsibility among students.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-semibold text-center text-blue-500">Robotics and Coding Clubs</h4>
+                        <p class="text-gray-600 text-center">Building technical skills and nurturing innovation.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-semibold text-center text-blue-500">Cultural Celebrations</h4>
+                        <p class="text-gray-600 text-center">Celebrating diversity and fostering a sense of community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12">
+            <h3 class="text-2xl font-semibold mb-4 text-blue-600 text-center">Meet Our Team</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="images/teacher1.jpg" alt="Teacher 1" class="rounded-full w-32 h-32 mx-auto mb-4">
+                    <h4 class="text-xl font-semibold text-center">Jane Doe</h4>
+                    <p class="text-gray-600 text-center">Principal</p>
+                    <p class="text-gray-500 text-center">With over 15 years of experience, Jane leads our school with passion and dedication.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="images/teacher2.jpg" alt="Teacher 2" class="rounded-full w-32 h-32 mx-auto mb-4">
+                    <h4 class="text-xl font-semibold text-center">John Smith</h4>
+                    <p class="text-gray-600 text-center">Math Teacher</p>
+                    <p class="text-gray-500 text-center">John is an expert in making math fun and engaging for students of all ages.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="images/teacher3.jpg" alt="Teacher 3" class="rounded-full w-32 h-32 mx-auto mb-4">
+                    <h4 class="text-xl font-semibold text-center">Emily Johnson</h4>
+                    <p class="text-gray-600 text-center">Art Teacher</p>
+                    <p class="text-gray-500 text-center">Emily encourages creativity and self-expression through various artistic mediums.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+<!-- Footer Section -->
+<footer class="bg-red-600 text-white">
+  <div class="max-w-screen-xl mx-auto p-4 py-6">
+      <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="#" class="flex items-center">
+                  <img src="images/logo.png" class="h-8 me-3" alt="Sundar School Logo" />
+                  <span class="self-center text-2xl font-semibold">Sundar School</span>
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white uppercase">Resources</h2>
+                  <ul class="text-gray-300">
+                      <li class="mb-4">
+                          <a href="apply.html" class="hover:underline">Apply Now</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white uppercase">Follow Us</h2>
+                  <ul class="text-gray-300">
+                      <li>
+                          <a href="#" class="hover:underline">Facebook</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Instagram</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white uppercase">Contact</h2>
+                  <ul class="text-gray-300">
+                      <li class="mb-4">
+                          <a href="mailto:info@sundarschool.com" class="hover:underline">Email</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Phone</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-600" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-300 sm:text-center">© 2025 Sundar School. All Rights Reserved.</span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>

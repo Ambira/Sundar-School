@@ -1,0 +1,150 @@
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <style>
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .bg-white {
+            background-color: white !important;
+        }
+    </style>
+</head>
+<body class="bg-white-100">
+
+<nav class="navbar bg-white border-b border-gray-200 shadow">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3">
+            <img src="images/logo.png" class="h-10" alt="Sundar School Logo" />
+            <span class="self-center text-2xl font-semibold">Sundar School</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 bg-white md:flex-row md:space-x-8">
+                <li>
+                  <a href="index.html" class="block py-2 px-3 text-gray-900 rounded md:hover:bg-transparent md:p-0">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="block py-2 px-3 text-gray-900 rounded md:hover:bg-transparent md:p-0">About Us</a>
+                </li>
+                <li>
+                    <a href="apply.html" class="block py-2 px-3 text-gray-900 rounded md:hover:bg-transparent md:p-0">Apply Now</a>
+                </li>
+                <li>
+                  <a href="gallery.html" class="block py-2 px-3 text-red-700 rounded md:bg-transparent md:p-0" aria-current="page">Gallery</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="block py-2 px-3 text-gray-900 rounded md:hover:bg-transparent md:p-0">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="gallery" class="py-20 bg-white">  <!-- Increased padding-top -->
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-red-700 mb-6">Our Vibrant Gallery</h2>
+        <p class="text-lg text-center text-gray-700 mb-10">Discover the joyful moments captured at Sundar School!</p>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="relative">
+                <img src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/344322228_203658802444733_7702377271976611816_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeGC7nCLPrt0c9P6gdmW8W2nyWcL8mCIpBnJZwvyYIikGZ52sEntnfImh6V0xKxzPt-dOzEJ-StRbbgQ2nwQ2MKd&_nc_ohc=9e39oqqCf3YQ7kNvgH-lhvy&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=A-tHYMw8ypu_rqd7M_p2Phl&oh=00_AYBc_v3sHB_u1c9x-2LMne4cUE8A5IEmd6roYOO6YkUhDw&oe=678DCA5C" alt="Gallery Image 1" class="rounded-lg shadow-lg">
+            </div>
+            <div class="relative">
+                <img src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/345024898_625391789467172_5647386473345465057_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeG5sefHRuJCKVO6BTdqQj9mznmsp9qGE1LOeayn2oYTUpD1KFSR8x1qxBN8BL6v6GC3CpoUGviMbsyhzwSmc67z&_nc_ohc=_4TmEifx3ysQ7kNvgHBX-lU&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=AK0OKqEAhoUAr1ljVd9Yksb&oh=00_AYDznKfF6W5V59LoDA_uRYZft4HNuMCaT0IrqmVF_wm3SQ&oe=678DB874" alt="Gallery Image 2" class="rounded-lg shadow-lg">
+            </div>
+            <div class="relative">
+                <img src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/344545438_986380412354996_2576934701026336047_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHgxxfizqvr9pKaWGo_f7DnK8ikCl9PJMkryKQKX08kyc61hM9sVLPwg5fFI_nxCM2FiaPxArY3pi4IgeMccM9P&_nc_ohc=9ThtcHi-6pcQ7kNvgGq5uZg&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=AcwLoH5YZLNgdJIunew-F4U&oh=00_AYABK_vYWQyrVQ22JdjrYJ61T9-wmFfgUBR-rcdl1Zzcww&oe=678DAEE2" alt="Gallery Image 3" class="rounded-lg shadow-lg">
+            </div>
+            <div class="relative">
+                <img src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/471331945_564009206396048_2833063742858593555_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHOB6N3Dh2IBmht6t50a2UHNFblk8LU7ng0VuWTwtTueJPy3jdrrl_YVU6pvbpCfiiYi5xdyYxZ8P8Feb8XPO56&_nc_ohc=1UtEOZFZqoIQ7kNvgGF86Z0&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=A3vZTbT5kCJFsI9sn4yBwxr&oh=00_AYCvL5mvO1nNltjtHN3EWgt8UcmP--TQtK9v_tW2gHgSWg&oe=678DA761" alt="Gallery Image 4" class="rounded-lg shadow-lg">
+            </div>
+            <div class="relative">
+                <img src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/472765525_574041232059512_4115592106525932501_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGY03J90vqU4jVRDWzW627lwwvOGyflOlXDC84bJ-U6VdsiCdpGLUpRc-q1a4XnWhj0BpEV9eFGWvNJ-rXeng11&_nc_ohc=5vXY3Ot1u0sQ7kNvgG2oQOL&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=AyGoAD7ujzr-0FcpcgZisx9&oh=00_AYAGkic9D4hZ0isjDo5AJOOM2BZsKeqj-s84-RHK_NV4jA&oe=678DC8A7" alt="Gallery Image 5" class="rounded-lg shadow-lg">
+            </div>
+            <div class="relative">
+                <img src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/471685652_566720586124910_6868429544803521875_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFKYKWyktItyVZwwsK8rSLJKfVEC1CT5kQp9UQLUJPmRPm3G1Pd1aGQddRgXJQRNnBd_Jnx9tyFAC2jdWhw4vku&_nc_ohc=Bk9j5BQuCycQ7kNvgFtaAqW&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=ASS-YotgTAUsn_RWVA5yAR0&oh=00_AYBu8j_wnWTgfe1chOSl9qXH0QeWJ0NqHs3G9HMlaxbIhQ&oe=678DAFBD" alt="Gallery Image 6" class="rounded-lg shadow-lg">
+            </div>
+            
+            <div class="relative">
+              <img src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/468443095_545206604942975_4279819023711403824_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEB1ORcx6IiiIJGLRgz7BcX59ex3zmzkSPn17HfObORI_rksWCj_ORW2vLicbQU288-8-0HaLkpA-xsxs_3QuHp&_nc_ohc=EYBwoirK0eoQ7kNvgFta9t5&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=AGQEj2kBdUYruhLJZlrm5v2&oh=00_AYA1PxNLZxDyFAJlKbEJE-X_VZFn0iOIqrtvuygZ_mFnAw&oe=678DBD62" alt="Gallery Image 1" class="rounded-lg shadow-lg">
+          </div>
+          <div class="relative">
+              <img src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/468096163_543078965155739_5032775451378470280_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFBYxVzs-DQJAI3oAVV_Z9j17J3EKi4t7fXsncQqLi3t7t8ex0b1r5swmFYsrbyZ9IdEvPjPV_ko9j_f8OGogCA&_nc_ohc=q2NZLRkZbS4Q7kNvgFY4QJc&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=AmiUqHhAVBx1l7NsRJqFwTy&oh=00_AYBmXFbhGMmnWl7xJoduYVsUsIWlkxx-ionfRjnhNMNSKA&oe=678DD95F" alt="Gallery Image 2" class="rounded-lg shadow-lg">
+          </div>
+          <div class="relative">
+              <img src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/468322258_543080225155613_5211985409823147066_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHH-4kNFGhKO7MlRbl59hbJ2TLmwGmMlXPZMubAaYyVc3yIRnShkSbuOFk4ygbPsL6vqpfcWeXsyWkcXKHj1dV_&_nc_ohc=9xX7cPsr9eMQ7kNvgH5xvbV&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=AJXdKFqd3oLEX_JMxxguKlq&oh=00_AYB5IziFTUDi3S54ro5FhYiLance8Rn6byCzudhZ1Yqm6g&oe=678DBCE9" alt="Gallery Image 3" class="rounded-lg shadow-lg">
+          </div>
+          <div class="relative">
+              <img src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/467741139_540347565428879_5259549863971532727_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGTSoI-59063OXpXTFZT5A0ORGJOdwtk6o5EYk53C2Tqg69JHJUd4zIAHeeXsesSRyEmP2HcLxfZW5Q7yY9o0_Y&_nc_ohc=FwAeafF-ss4Q7kNvgH82aUH&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=ACV5Ko2u4LcH7HBSO8umECB&oh=00_AYBoot4EmmAOh5r02a20l3fK7dyD5pCn4JwnQQBjlNIsug&oe=678DAFCD" alt="Gallery Image 4" class="rounded-lg shadow-lg">
+          </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer Section -->
+<footer class="bg-red-600 text-white">
+  <div class="max-w-screen-xl mx-auto p-4 py-6">
+      <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="#" class="flex items-center">
+                  <img src="images/logo.png" class="h-8 me-3" alt="Sundar School Logo" />
+                  <span class="self-center text-2xl font-semibold">Sundar School</span>
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white uppercase">Resources</h2>
+                  <ul class="text-gray-300">
+                      <li class="mb-4">
+                          <a href="apply.html" class="hover:underline">Apply Now</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white uppercase">Follow Us</h2>
+                  <ul class="text-gray-300">
+                      <li>
+                          <a href="#" class="hover:underline">Facebook</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Instagram</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white uppercase">Contact</h2>
+                  <ul class="text-gray-300">
+                      <li class="mb-4">
+                          <a href="mailto:info@sundarschool.com" class="hover:underline">Email</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Phone</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-600" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-300 sm:text-center">© 2025 Sundar School. All Rights Reserved.</span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>

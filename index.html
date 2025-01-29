@@ -1,0 +1,250 @@
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <style>
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .bg-white {
+            background-color: white !important;
+        }
+    </style>
+</head>
+<body class="bg-white-100">
+
+<nav class="navbar bg-white border-b border-gray-200 shadow">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3">
+            <img src="images/logo.png" class="h-10" alt="Sundar School Logo" />
+            <span class="self-center text-2xl font-semibold">Sundar School</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 bg-white md:flex-row md:space-x-8">
+                <li>
+                    <a href="index.html" class="block py-2 px-3 text-red-700 rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">About Us</a>
+                </li>
+                <li>
+                    <a href="applys.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">Apply Now</a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">Gallery</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="default-carousel" class="relative w-full mt-16" data-carousel="slide" data-carousel-interval="3000">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 1">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 2">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 3">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 4">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 5">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full bg-red-500 hover:bg-red-700" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full bg-red-500 hover:bg-red-700" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full bg-red-500 hover:bg-red-700" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full bg-red-500 hover:bg-red-700" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full bg-red-500 hover:bg-red-700" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white focus:outline-none">
+            <svg class="w-4 h-4 text-red-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white focus:outline-none">
+            <svg class="w-4 h-4 text-red-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+<!-- About Section -->
+<section id="about" class="container mx-auto px-4 py-12 bg-white">
+    <h2 class="text-3xl font-bold text-red-600 mb-4">About Sundar School</h2>
+    <p class="text-gray-700 mb-6">Sundar School aims to provide a nurturing and stimulating environment where children can grow emotionally, socially, and academically. With our dedicated staff and innovative curriculum, we focus on holistic education that engages every child.</p>
+</section>
+
+<!-- Principal's Voice Section -->
+<section id="principal-voice" class="bg-white py-14 px-6 md:px-12 lg:px-20">
+    <div class="max-w-7xl mx-auto">
+        <!-- Section Heading -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-blue-700 sm:text-5xl">Principal's Voice</h2>
+            <p class="mt-2 text-lg text-gray-600">
+                A message from our esteemed Principal
+            </p>
+        </div>
+        <!-- Content Container -->
+        <div class="flex flex-col md:flex-row bg-blue-50 shadow-lg rounded-lg overflow-hidden">
+            <!-- Principal's Image -->
+            <div class="md:w-1/3 flex justify-center items-center bg-blue-200">
+                <img 
+                    src="images/principal.jpeg" 
+                    alt="Principal's Picture" 
+                    class="w-full h-auto object-cover md:max-w-sm rounded-lg shadow-md"
+                />
+            </div>
+            <!-- Message Content -->
+            <div class="md:w-2/3 p-8">
+                <div class="text-gray-700">
+                    <p class="text-lg leading-relaxed">
+                        <span class="font-semibold text-gray-800">Dear Parents, Guardians, and Well-Wishers,</span>
+                        <br><br>
+                        Welcome to <strong>Sundar School</strong>, where every child’s potential is nurtured, and dreams take flight. At Sundar School, we believe that education is more than just academics; it’s about shaping character, fostering creativity, and building lifelong learners equipped to thrive in a dynamic world.
+                        <br><br>
+                        Our vision is to create an inclusive and empowering environment that celebrates diversity and encourages each student to discover their unique strengths. Guided by our core values of integrity, compassion, and innovation, we are committed to providing a holistic education that blends tradition with modernity.
+                        <br><br>
+                        I invite you to join us in this journey of shaping the future—together. Let’s inspire young minds to lead, contribute, and create a brighter tomorrow.
+                    </p>
+                    <p class="mt-6 font-semibold">Warm regards,</p>
+                    <p class="mt-1 font-semibold text-green-600">Shyam Sundar Chaudhary, PhD</p>
+                    <p class="mt-1">Principal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Apply Now Section -->
+<section id="Apply Now" class="py-10 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-green-600 mb-8">Apply Now</h2>
+        <p class="text-gray-700 text-center mb-6">Ready to enroll your child? Click below for our Apply Now form and details.</p>
+        <div class="text-center">
+            <a href="apply.html" class="px-6 py-3 bg-green-500 text-white rounded-lg shadow hover:bg-green-600 transition">Apply Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="py-10 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-red-600 mb-8">View Our Gallery</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/344322228_203658802444733_7702377271976611816_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeGC7nCLPrt0c9P6gdmW8W2nyWcL8mCIpBnJZwvyYIikGZ52sEntnfImh6V0xKxzPt-dOzEJ-StRbbgQ2nwQ2MKd&_nc_ohc=9e39oqqCf3YQ7kNvgH-lhvy&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=A-tHYMw8ypu_rqd7M_p2Phl&oh=00_AYBc_v3sHB_u1c9x-2LMne4cUE8A5IEmd6roYOO6YkUhDw&oe=678DCA5C" alt="Gallery Image 1">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/344545438_986380412354996_2576934701026336047_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHgxxfizqvr9pKaWGo_f7DnK8ikCl9PJMkryKQKX08kyc61hM9sVLPwg5fFI_nxCM2FiaPxArY3pi4IgeMccM9P&_nc_ohc=9ThtcHi-6pcQ7kNvgGq5uZg&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=AcwLoH5YZLNgdJIunew-F4U&oh=00_AYABK_vYWQyrVQ22JdjrYJ61T9-wmFfgUBR-rcdl1Zzcww&oe=678DAEE2" alt="Gallery Image 2">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/471685652_566720586124910_6868429544803521875_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFKYKWyktItyVZwwsK8rSLJKfVEC1CT5kQp9UQLUJPmRPm3G1Pd1aGQddRgXJQRNnBd_Jnx9tyFAC2jdWhw4vku&_nc_ohc=Bk9j5BQuCycQ7kNvgFtaAqW&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=ASS-YotgTAUsn_RWVA5yAR0&oh=00_AYBu8j_wnWTgfe1chOSl9qXH0QeWJ0NqHs3G9HMlaxbIhQ&oe=678DAFBD" alt="Gallery Image 3">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/472765525_574041232059512_4115592106525932501_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGY03J90vqU4jVRDWzW627lwwvOGyflOlXDC84bJ-U6VdsiCdpGLUpRc-q1a4XnWhj0BpEV9eFGWvNJ-rXeng11&_nc_ohc=5vXY3Ot1u0sQ7kNvgG2oQOL&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=AyGoAD7ujzr-0FcpcgZisx9&oh=00_AYAGkic9D4hZ0isjDo5AJOOM2BZsKeqj-s84-RHK_NV4jA&oe=678DC8A7" alt="Gallery Image 4">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/468443095_545206604942975_4279819023711403824_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEB1ORcx6IiiIJGLRgz7BcX59ex3zmzkSPn17HfObORI_rksWCj_ORW2vLicbQU288-8-0HaLkpA-xsxs_3QuHp&_nc_ohc=EYBwoirK0eoQ7kNvgFta9t5&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=AGQEj2kBdUYruhLJZlrm5v2&oh=00_AYA1PxNLZxDyFAJlKbEJE-X_VZFn0iOIqrtvuygZ_mFnAw&oe=678DBD62" alt="Gallery Image 5">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow-md transition-transform hover:scale-105" src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/344545438_986380412354996_2576934701026336047_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHgxxfizqvr9pKaWGo_f7DnK8ikCl9PJMkryKQKX08kyc61hM9sVLPwg5fFI_nxCM2FiaPxArY3pi4IgeMccM9P&_nc_ohc=9ThtcHi-6pcQ7kNvgGq5uZg&_nc_zt=23&_nc_ht=scontent.fktm1-1.fna&_nc_gid=AcwLoH5YZLNgdJIunew-F4U&oh=00_AYABK_vYWQyrVQ22JdjrYJ61T9-wmFfgUBR-rcdl1Zzcww&oe=678DAEE2" alt="Gallery Image 6">
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <a href="gallery.html" class="px-6 py-3 bg-red-600 text-white rounded-lg shadow hover:bg-blue-700 transition">View Full Gallery</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-red-600 text-white">
+    <div class="max-w-screen-xl mx-auto p-4 py-6">
+        <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="#" class="flex items-center">
+                    <img src="images/logo.png" class="h-8 me-3" alt="Sundar School Logo" />
+                    <span class="self-center text-2xl font-semibold">Sundar School</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-white uppercase">Resources</h2>
+                    <ul class="text-gray-300">
+                        <li class="mb-4">
+                            <a href="apply.html" class="hover:underline">Apply Now</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-white uppercase">Follow Us</h2>
+                    <ul class="text-gray-300">
+                        <li>
+                            <a href="#" class="hover:underline">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-white uppercase">Contact</h2>
+                    <ul class="text-gray-300">
+                        <li class="mb-4">
+                            <a href="mailto:info@sundarschool.com" class="hover:underline">Email</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Phone</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-600" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-300 sm:text-center">© 2025 Sundar School. All Rights Reserved.</span>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>
